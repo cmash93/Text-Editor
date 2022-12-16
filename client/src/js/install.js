@@ -1,5 +1,3 @@
-import { NormalModuleReplacementPlugin } from "webpack";
-
 const butInstall = document.getElementById('buttonInstall');
 
 // Logic for installing the PWA
@@ -18,7 +16,7 @@ butInstall.addEventListener('click', async () => {
 
     promptEvent.prompt();
 
-    window.deferredPrompt = NormalModuleReplacementPlugin
+    window.deferredPrompt = null;
     
     butInstall.classList.toggle('hidden', true);
 });
